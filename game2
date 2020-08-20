@@ -32,3 +32,22 @@
   var x = 50;
   var y = 50;
   
+  var canvas = document.getElementById('game');
+  canvas.width = window.innerWidth;
+  canvas.height.window.innerHeight;
+  
+  var ctx = canvas.getContext('2d');
+  var speed = 3;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+    var character = new Path2D();
+    character.arc(x, y, 25, 0, 2 * Math.PI)
+    
+    ctx.fill(character);
+  
+  setInterval(draw, 10);
+  }
+</script>
+</body>
+</html>
