@@ -99,7 +99,7 @@ function updateGameArea() {
     }
     myGameArea.clear();
     myGameArea.frameNo += 1;
-    if (myGameArea.frameNo == 1 || everyinterval(300)) {
+    if (myGameArea.frameNo == 1 || everyinterval(150)) {
         x = myGameArea.canvas.width;
         minHeight = 20;
         maxHeight = 200;
@@ -111,7 +111,7 @@ function updateGameArea() {
         myObstacles.push(new component(10, x - height - gap, "blue", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
-        myObstacles[i].x += -2;
+        myObstacles[i].x += -1;
         myObstacles[i].update();
     }
     myScore.text="SCORE: " + myGameArea.frameNo;
