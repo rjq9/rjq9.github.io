@@ -111,7 +111,7 @@ function updateGameArea() {
         myObstacles.push(new component(10, x - height - gap, "blue", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
-        myObstacles[i].x += -4;
+        myObstacles[i].x += -0.5;
         myObstacles[i].update();
     }
     myScore.text="SCORE: " + myGameArea.frameNo;
@@ -130,6 +130,6 @@ function accelerate(n) {
 }
 </script>
 <br>
-<button onmousedown="accelerate(-0.25)" onmouseup="accelerate(0.25)">ACCELERATE</button>
+<button onmousedown="accelerate(-0.1)" onmouseup="accelerate(0.1)">ACCELERATE</button>
 <p>Use the ACCELERATE button to stay in the air</p>
 <p>How long can you stay alive?</p>
