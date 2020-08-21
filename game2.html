@@ -42,10 +42,10 @@
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     if(Key.isDown(Key.UP)){
-      y+=speed;
+      y-=speed;
     }
     if(Key.isDown(Key.DOWN)){
-      y-=speed;
+      y+=speed;
     }
     if(Key.isDown(Key.LEFT)){
       x-=speed;
