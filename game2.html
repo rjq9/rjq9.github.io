@@ -33,13 +33,14 @@
   var y = 50;
   
   var canvas = document.getElementById('game');
-  canvas.width = window.innerWidth-50;
-  canvas.height = window.innerHeight-50;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
   
   var ctx = canvas.getContext('2d');
   
-  var goalX = 200
-  var goalY = 200
+  var goalX = Math.random() * window.innerWidth;
+  var goalY = Math.random() * window.innerHeight;
+
   var speed = 3;
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
