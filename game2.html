@@ -40,6 +40,8 @@
   
   var goalX = Math.random() * window.innerWidth;
   var goalY = Math.random() * window.innerHeight;
+  var playerSize = 25
+  var goalSize = 15
 
   var speed = 3;
   function draw() {
@@ -57,11 +59,17 @@
     if(Key.isDown(Key.RIGHT)){
       x+=speed;
     }
+    
+    if ((math.abs(x-goalX))**2 + (math.abs(y-goalY))**2 < (playerSize+goalSize)**2){
+      playerSize += 2;
+      goalX = Math.random() * canvas.width;
+      goalY = Math.random() * canvas.height;
+    }
     var character = new Path2D();
-    character.arc(x, y, 25, 0, 2 * Math.PI)
+    character.arc(x, y, playerSize, 0, 2 * Math.PI)
     
     var goal = new Path2D();
-    goal.arc(goalX, goalY, 25, 0, 2 * Math.PI)
+    goal.arc(goalX, goalY, goalSize, 0, 2 * Math.PI)
     
     ctx.fill(character);
     ctx.fillStyle = "#FF0000"
