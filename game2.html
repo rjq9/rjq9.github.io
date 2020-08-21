@@ -60,7 +60,7 @@
       x+=speed;
     }
     
-    if ((math.abs(x-goalX))**2 + (math.abs(y-goalY))**2 < (playerSize+goalSize)**2){
+    if ((Math.abs(x-goalX))**2 + (Math.abs(y-goalY))**2 < (playerSize+goalSize)**2){
       playerSize += 2;
       goalX = Math.random() * canvas.width;
       goalY = Math.random() * canvas.height;
