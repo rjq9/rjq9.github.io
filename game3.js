@@ -1,5 +1,5 @@
 let playerImage;
-
+let keysPressed;
 let player = {
     x: 500,
     y: 550,
