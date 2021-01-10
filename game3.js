@@ -15,6 +15,14 @@ function setup(){
     createCanvas(1000,700);
 }
 
+function keyPressed(){
+    keysPressed[key] = true;
+}
+
+function keyReleased(){
+    keysPressed[key] = false;
+}
+
 function draw(){
     background(0);
     image(playerImage, player.x, player.y);
@@ -35,10 +43,4 @@ function draw(){
     }
 }
 
-function keyPressed(){
-    keyPressed[key] = true;
-}
 
-function keyReleased(){
-    keysPressed[key] = false;
-}
