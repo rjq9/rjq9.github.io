@@ -15,7 +15,7 @@ var myGamePiece;
 var myObstacles = [];
 var myScore;
 function startGame() {
-    myGamePiece = new component(10, 10, "pixil-frame-0 (3).png", 10, 120);
+    myGamePiece = new component(20, 20, "pixil-frame-0 (3).png", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
@@ -23,8 +23,8 @@ function startGame() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 960;
+        this.canvas.height = 540;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -100,11 +100,11 @@ function updateGameArea() {
     myGameArea.frameNo += 1;
     if (myGameArea.frameNo == 1 || everyinterval(150)) {
         x = myGameArea.canvas.width;
-        minHeight = 20;
-        maxHeight = 200;
+        minHeight = 40;
+        maxHeight = 400;
         height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-        minGap = 25;
-        maxGap = 50;
+        minGap = 50;
+        maxGap = 100;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
         myObstacles.push(new component(10, height, "red", x, 0));
         myObstacles.push(new component(10, x - height - gap, "blue", x, height + gap));
