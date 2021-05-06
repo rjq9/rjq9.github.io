@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html> <!--FIX-->
 <head>
 </head>
 <body>
   <canvas id = "game"></canvas>
   <noscript><p>Turn on Javascript, you fool. If you can't use Javascript, try not being a boomer.</p></noscript>
 <script>
-  var score;
   var Key = {
   _pressed: {},
   
@@ -38,8 +37,6 @@
   canvas.width = window.innerWidth - 20;
   canvas.height = window.innerHeight - 20;
   
-  var ctx = canvas.getContext('2d');
-  var score = new component("30px", "Consolas", "black", 280, 40, "text"); 
   var goalX = Math.random() * window.innerWidth - 20;
   var goalY = Math.random() * window.innerHeight - 20;
   var playerSize = 25
@@ -47,7 +44,6 @@
 
   var speed = 3;
   function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     if(Key.isDown(Key.UP)){
       y-=speed;
@@ -76,8 +72,6 @@
     ctx.fill(character);
     ctx.fillStyle = "#FF0000"
     ctx.fill(goal)
-    score.text="SCORE: " + score;
-    score.update();
   }
   setInterval(draw, 10);
   
