@@ -1,0 +1,15 @@
+* {
+    cursor:col-resize;
+}
+p {
+    cursor:not-allowed;
+}
+a {
+    cursor: wait;
+}
+a.alt {
+    cursor: no-drop;
+}
+p.alt {
+    cursor:none;
+}
