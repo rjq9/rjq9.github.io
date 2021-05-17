@@ -78,10 +78,10 @@ function Ball(x, y) {
         text(this.note, this.x, this.y);
     }
     this.bounce = function(){
-        if (this.x > width || this.x < 0){
+        if (this.x > width + this.sz || this.x < this.sz){
             this.xSpeed *= -1;
         }
-        if (this.y > height || this.y < 0) {
+        if (this.y > height + this.sz|| this.y < this.sz) {
             this.ySpeed *= -1;
         };
     }
