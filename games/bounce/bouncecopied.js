@@ -13,7 +13,6 @@ function setup() {
   Gp = loadSound('/sound/G Piano.wav');
   Ap = loadSound('/sound/A Piano.wav');
   Bp = loadSound('/sound/B Piano.wav');
-  C2p = loadSound('/sound/C2 Piano.wav');
   for (var i = 0; i < startballs; i++) {
     balls[i] = new Ball(width/2, height/2);
     score++;
