@@ -50,7 +50,6 @@ function mousePressed() {
   for (var i = 0; i < balls.length; i++) {    
       if(Math.hypot(mouseX-balls[i].x,mouseY-balls[i].y)<balls[i].sz/2){
         collided = 1;
-        
         playNote(balls[i].note);
         balls.splice(i,1);
         score--;
