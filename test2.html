@@ -11,19 +11,19 @@ function sliderChange(){
 function sliderChangeR(val){
   r = val;
   document.getElementById("rValue").innerHTML = "red value: " + r;
-  sliderChange();
+
 }
 
 function sliderChangeG(val){
   g = val;
   document.getElementById("gValue").innerHTML = "green value: " + g;
-  sliderChange();
+
 }
 
 function sliderChangeB(val){
   b = val;
   document.getElementById("bValue").innerHTML = "blue value: " + b;
-  sliderChange();
+
 }
 </script>
 
@@ -38,6 +38,7 @@ function sliderChangeB(val){
 <p id = "rValue">red value: 255</p>
 <p id = "gValue">green value: 255</p>
 <p id = "bValue">blue value: 255</p>
+  <button onclick = "sliderChange()">Update BGR Colors</button>
 </p>
 </body>
 </html>
