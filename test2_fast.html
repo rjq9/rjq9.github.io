@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script>
+var r = 255;
+var g = 255;
+var b = 255;
+function sliderChange(){
+  document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")")
+
+}
+  
+function sliderChangeR(val){
+  r = val;
+  document.getElementById("rValue").innerHTML = "red value: " + r;
+  sliderChange()
+}
+
+function sliderChangeG(val){
+  g = val;
+  document.getElementById("gValue").innerHTML = "green value: " + g;
+  sliderChange()
+}
+
+function sliderChangeB(val){
+  b = val;
+  document.getElementById("bValue").innerHTML = "blue value: " + b;
+  sliderChange()
+}
+</script>
+
+<body>
+  <a href = "index.html">Home</a> <br>
+<p>
+<input type="range" id="slider" min="0" max="255" onchange="sliderChangeR(this.value)" value = "255"/> <br>
+<input type="range" id="slider" min="0" max="255" onchange="sliderChangeG(this.value)" value = "255"/> <br>
+<input type="range" id="slider" min="0" max="255" onchange="sliderChangeB(this.value)" value = "255"/> <br>
+<noscript>
+  Scripts are not working properly! Please enable them. If the problem is with your browser, try not living under a rock.</noscript>
+<p id = "rValue">red value: 255</p>
+<p id = "gValue">green value: 255</p>
+<p id = "bValue">blue value: 255</p>
+</p>
+</body>
+</html>
