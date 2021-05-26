@@ -5,6 +5,9 @@ var r = 255;
 var g = 255;
 var b = 255;
 function sliderChange(){
+  document.getElementById("rold").innertHTML. "old red value: " + r;
+  document.getElementById("gold").innertHTML. "old red value: " + g;
+  document.getElementById("bold").innertHTML. "old red value: " + b;
   document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")")
 }
   
@@ -38,6 +41,10 @@ function sliderChangeB(val){
 <p id = "rValue">red value: 255</p>
 <p id = "gValue">green value: 255</p>
 <p id = "bValue">blue value: 255</p>
+  <h2>Old Values</h2>
+  <p id = "rold">old red value: 255</p>
+  <p id = "gold">old green value: 255</p>
+  <p id = "bold">old blue value: 255</p>
   <button onclick = "sliderChange()">Update BGR Colors</button>
   <button onclick = "document.location='test2_fast.html'" title = "Version that updates color automatically.">Faster Version</button>
 </p>
