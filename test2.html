@@ -5,17 +5,19 @@
 var r = 255;
 var g = 255;
 var b = 255;
+var rOld, gOld, bOld = 255;
 function sliderChange(){
   document.getElementById("rold").innerHTML = "red value: " + r;
   document.getElementById("gold").innerHTML = "green value: " + g;
   document.getElementById("bold").innerHTML = "blue value: " + b;
+  rOld, gOld, bOld = r, g, b;
   document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")")
 }
   
 function sliderChangeR(val){
   r = val;
   document.getElementById("rValue").innerHTML = "red value: " + r;
-
+  
 }
 
 function sliderChangeG(val){
@@ -29,6 +31,9 @@ function sliderChangeB(val){
   document.getElementById("bValue").innerHTML = "blue value: " + b;
 
 }
+function box(){
+  document.getElementById("colorbox").style.backgroundColor = ("rgb("+rOld+","+gOld+","+bOld+")")
+}
 </script>
 <style>
   #rmmargin {
@@ -37,6 +42,9 @@ function sliderChangeB(val){
   }
   button {
     color: rgb(50, 125, 168);
+  }
+  #colorbox {
+    border: 3px solid black;
   }
      
 </style>
@@ -51,16 +59,17 @@ function sliderChangeB(val){
 <input type="range" id="slider" min="0" max="255" onchange="sliderChangeR(this.value)" value = "255"/> <br>
 <input type="range" id="slider" min="0" max="255" onchange="sliderChangeG(this.value)" value = "255"/> <br>
 <input type="range" id="slider" min="0" max="255" onchange="sliderChangeB(this.value)" value = "255"/> <br>
-  <h2>Slider Values</h2>
-<p id = "rValue">red value: 255</p>
-<p id = "gValue">green value: 255</p>
-<p id = "bValue">blue value: 255</p>
-  <h2>Current BGR Colors</h2>
+<h2>Slider Values</h2>
+  <p id = "rValue">red value: 255</p>
+  <p id = "gValue">green value: 255</p>
+  <p id = "bValue">blue value: 255</p>
+  <p id = "colorbox"></p>
+<h2>Current BGR Colors</h2>
   <p id = "rold">red value: 255</p>
   <p id = "gold">green value: 255</p>
   <p id = "bold">blue value: 255</p>
-  <button onclick = "sliderChange()">Update BGR Colors</button>
-  <button onclick = "document.location='test2_fast.html'" title = "Version that updates color automatically.">Faster Version</button>
+<button onclick = "sliderChange()">Update BGR Colors</button>
+<button onclick = "document.location='test2_fast.html'" title = "Version that updates color automatically.">Faster Version</button>
 </div>
 </body>
 </html>
