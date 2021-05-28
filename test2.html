@@ -35,7 +35,7 @@ function box(){
 }
 </script>
 <style>
-  #rmmargin {
+  .rmmargin {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -50,6 +50,9 @@ function box(){
     float: right;
     
   }
+  #hlink {
+    font-family: sans-serif;
+  }
      
 </style>
 <div>
@@ -59,10 +62,10 @@ function box(){
   
 
 <body>
-  <h3><a href = "index.html">Home</a></h3> <br>
+
 <div>
   <noscript>Scripts are not working properly! Please enable them. If the problem is with your browser, try not living under a rock.</noscript>
-  <h2>Background Sliders</h2>
+  <h2 class = "rmmargin">Background Sliders</h2>
 <input type="range" id="slider" min="0" max="255" onchange="sliderChangeR(this.value)" value = "255"/> <br>
 <input type="range" id="slider" min="0" max="255" onchange="sliderChangeG(this.value)" value = "255"/> <br>
 <input type="range" id="slider" min="0" max="255" onchange="sliderChangeB(this.value)" value = "255"/> <br>
@@ -76,6 +79,7 @@ function box(){
   <p id = "bold">blue value: 255</p>
 <button onclick = "sliderChange()">Update BGR Colors</button>
 <button onclick = "document.location='test2_fast.html'" title = "Version that updates color automatically.">Faster Version</button>
+<h3 id = "hlink"><a href = "index.html">Home</a></h3>
 </div>
 </body>
 </html>
