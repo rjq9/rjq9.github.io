@@ -2,10 +2,8 @@
 <html>
 <head>
 <script src = 'bgrcustom.js'></script>
-<link rel = "stylesheet" href = "bgrcustom.css"
-<div>
+<link rel = "stylesheet" href = "bgrcustom.css" />
 <p id = "colorbox" class = "rmmargin"></p> <!--remember that this element is here-->
-</div>
 </head>
 <body>
 <div>
@@ -24,6 +22,14 @@
   <p id = "bold">blue value: 255</p>
 <button onclick = "sliderChange()">Update BGR Colors</button>
 <button onclick = "document.location='test2_fast.html'" title = "Version that updates color automatically.">Faster Version</button>
+<h3>Current CSS</h3>
+<pre id = "copy">
+body { 
+  background-color: rgb(255, 255, 255);
+}
+</pre>
+<button onclick = "copy()">Copy Text</button> <!--copy text button-->
+<p id = "iscopied"></p> <!--shows whether or not something is copied-->
 <h3 id = "hlink"><button onclick = "document.location='index.html'">Home Page</button></h3>
 </div>
 </body>

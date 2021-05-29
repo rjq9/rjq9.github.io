@@ -6,8 +6,14 @@ function sliderChange(){
   document.getElementById("gold").innerHTML = "green value: " + g;
   document.getElementById("bold").innerHTML = "blue value: " + b;
   document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")")
+  changeStyleText();
 }
-  
+function changeStyleText(){
+  var csstext;
+  csstext = "body {<br>" + "  background-color: " + "rgb("+r+","+g+","+b+");" + "<br>}";
+  document.getElementById("copy").innerHTML=csstext;
+
+}
 function sliderChangeR(val){
   r = val;
   document.getElementById("rValue").innerHTML = "red value: " + r;
@@ -29,3 +35,10 @@ function sliderChangeB(val){
 function box(){
   document.getElementById("colorbox").style.backgroundColor = ("rgb("+r+","+g+","+b+")")
 }
+function copy(){
+  const cb = navigator.clipboard;
+  const paragraph = document.querySelector('pre'); 
+  cb.writeText(paragraph.innerText).then(() => document.getElementById("iscopied").innerHTML = "Copied!"); 
+  //https://dev.to/tqbit/how-to-use-javascript-to-copy-text-to-the-clipboard-2hi2
+}
+

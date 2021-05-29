@@ -1,6 +1,6 @@
 
 * {
-  font-family: serif;
+  font-family: century-gothic, verdana, sans-serif;
   background-color: black;
   color: white;
 }
@@ -10,4 +10,7 @@ a {
 .center {
   text-align: center;
   text-decoration: bold;
+}
+.noboldcenter {
+  text-align: center;
 }
