@@ -7,6 +7,27 @@
 a {
   color: rgb(64, 64, 255);
 }
+
+
+a:visited {
+  color:rgb(128, 0, 128);
+}
+a:hover{
+  color: rgb(96, 96, 255);
+}
+
+
+a:active {
+  color: rgb(48, 48, 192);
+}
+a:visited:hover {
+  color: rgb(150, 32, 150);
+}
+a:visited:active{
+  color: rgb(96, 0, 96);
+}
+
+
 .center {
   text-align: center;
   text-decoration: bold;
