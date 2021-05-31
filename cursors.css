@@ -1,17 +1,21 @@
 * {
     cursor:col-resize;
 }
-p {
+p, pre {
     cursor:not-allowed;
 }
 a {
     cursor: wait;
 }
+
 a.alt {
     cursor: no-drop;
 }
 p.alt {
     cursor:none;
+}
+pre.alt {
+    cursor: none;
 }
 #holy{
     cursor: alias;
