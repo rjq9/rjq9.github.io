@@ -1,18 +1,28 @@
+* {
+  font-family: sans-serif;
+}
+pre {
+    font-family: monospace;
+}
 .rmmargin {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  button {
-    color: rgb(50, 125, 168);
-  }
-  #colorbox {
-    border: 3px solid black;
-    height: 100px;
-    width: 100px;
-    display: inline;
-    float: right;
+ }
+button {
+  color: rgb(50, 125, 168);
+  border: outset;
+}
+button:active {
+    border: inset;
+}
+#colorbox {
+   border: 3px solid black;
+   height: 100px;
+   width: 100px;
+   display: inline;
+   float: right;
     
-  }
-  #hlink {
-    font-family: sans-serif;
-  }
+}
+#hlink {
+  font-family: sans-serif;
+}
