@@ -2,8 +2,16 @@
 <html len="en">
 <head>
   <title>Html Style</title>
+  <script src = "htmlstyle.js"></script>
 </head>
 <body>
-  <p>WIP</p>
+  <input type = "range" id = "rbgr" min = "0" max = "255" onchange = "rbgr(this.value)" value = "255" />
+  <input type = "range" id = "gbgr" min = "0" max = "255" onchange = "gbgr(this.value)" value = "255" />
+  <input type = "range" id = "bbgr" min = "0" max = "255" onchange = "bbgr(this.value)" value = "255" />
+  <hr />
+  <input type = "range" id = "rtext" min = "0" max = "255" value = "255" />
+  <input type = "range" id = "rtext" min = "0" max = "255" value = "255" />
+  <input type = "range" id = "rtext" min = "0" max = "255" value = "255" />
+  <p id = "accusative">Sample Text</p>
 </body>
 </html>
