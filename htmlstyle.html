@@ -8,11 +8,13 @@
   <input type = "range" id = "rbgr" min = "0" max = "255" onchange = "bgrnv(this.value, 0)" value = "255" />
   <input type = "range" id = "gbgr" min = "0" max = "255" onchange = "bgrnv(this.value, 1)" value = "255" />
   <input type = "range" id = "bbgr" min = "0" max = "255" onchange = "bgrnv(this.value, 2)" value = "255" />
-  <button onclick = "bgrupdate()">Update</button>
+  <button onclick = "bgrupdate()">Update Background</button>
   <hr />
-  <input type = "range" id = "rtext" min = "0" max = "255" value = "255" />
-  <input type = "range" id = "rtext" min = "0" max = "255" value = "255" />
-  <input type = "range" id = "rtext" min = "0" max = "255" value = "255" />
+  <input type = "range" id = "rtext" min = "0" max = "255" onchange = "tcnv(this.value, 0)" value = "0" />
+  <input type = "range" id = "rtext" min = "0" max = "255" onchange = "tcnv(this.value, 1)" value = "0" />
+  <input type = "range" id = "rtext" min = "0" max = "255" onchange = "tcnv(this.value, 2)" value = "0" />
+  <button onclick = "tcupdate()">Update Text Color</button>
+  <hr />
   <p id = "accusative">Sample Text</p>
 </body>
 </html>
