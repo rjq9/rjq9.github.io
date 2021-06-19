@@ -1,4 +1,4 @@
-var r = 255;
+var r = 255; //this stuff can be improved so much but whatever
 var g = 255;
 var b = 255;
 function sliderChange(){

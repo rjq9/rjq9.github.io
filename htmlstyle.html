@@ -3,18 +3,43 @@
 <head>
   <title>Html Style</title>
   <script src = "htmlstyle.js"></script>
+  <style>
+    button, input, p {
+      display: block;
+      margin-bottom: 10px;
+    }
+    #preview{
+      border: 7px solid black;
+      margin: 0px;
+      height: 100px;
+      width: 100px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <input type = "range" id = "rbgr" min = "0" max = "255" onchange = "bgrnv(this.value, 0)" value = "255" />
-  <input type = "range" id = "gbgr" min = "0" max = "255" onchange = "bgrnv(this.value, 1)" value = "255" />
-  <input type = "range" id = "bbgr" min = "0" max = "255" onchange = "bgrnv(this.value, 2)" value = "255" />
+  <p id = "preview">Color Preview. Update values when ready.</p> <br />
+  <input type = "range" id = "rbgr" min = "0" max = "255" oninput = "bgrnv(this.value, 0)" value = "255" />
+  <input type = "range" id = "gbgr" min = "0" max = "255" oninput = "bgrnv(this.value, 1)" value = "255" />
+  <input type = "range" id = "bbgr" min = "0" max = "255" oninput = "bgrnv(this.value, 2)" value = "255" />
   <button onclick = "bgrupdate()">Update Background</button>
   <hr />
-  <input type = "range" id = "rtext" min = "0" max = "255" onchange = "tcnv(this.value, 0)" value = "0" />
-  <input type = "range" id = "rtext" min = "0" max = "255" onchange = "tcnv(this.value, 1)" value = "0" />
-  <input type = "range" id = "rtext" min = "0" max = "255" onchange = "tcnv(this.value, 2)" value = "0" />
+  <input type = "range" id = "rtext" min = "0" max = "255" oninput = "tcnv(this.value, 0)" value = "0" />
+  <input type = "range" id = "rtext" min = "0" max = "255" oninput = "tcnv(this.value, 1)" value = "0" />
+  <input type = "range" id = "rtext" min = "0" max = "255" oninput = "tcnv(this.value, 2)" value = "0" />
   <button onclick = "tcupdate()">Update Text Color</button>
   <hr />
   <p id = "accusative">Sample Text</p>
+  <p id = "bgrvalshow">R: 255 G: 255 B: 255</p>
+  <p id = "tcvalshow">R: 255 G: 255 B: 255</p>
+  <hr />
+  <p><i>Note: this CSS applies to &lt;p&gt; elements. <br /> The code that makes this do anything is unfinished for now. <br />
+  Check back later!</i></p> 
+  <pre id = "css">
+ p {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+  </pre>
 </body>
 </html>
