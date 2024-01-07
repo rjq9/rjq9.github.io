@@ -100,9 +100,11 @@
     ctx.fill(character);
     ctx.fillStyle = "#FF0000"
     ctx.fill(goal)
-    score.text="SCORE: " + score;
-    score.update();
-    myScore.text="SCORE: " + myGameArea.frameNo;
+
+    ctx.strokeText("Score: " + playerSize/5,5,5);
+    //score.text="SCORE: " + score;
+    //score.update();
+    //myScore.text="SCORE: " + myGameArea.frameNo;
   }
   setInterval(draw, 10);
   
