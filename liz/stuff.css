@@ -1,0 +1,105 @@
+/* Written a long time ago, modified recently */
+* {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: white;
+  }
+/* Container for all the text.*/
+.bin {
+ padding: 0 0 40px;
+}
+
+p {
+/*font-family: Helvetica, Arial, sans-serif;*/
+line-height: 1.6;
+}
+p#intro {
+    line-height:1;
+}
+#jb {
+    /*color:red;*/
+    font-weight:bold;
+}
+p.narrator {
+    text-align:center;
+    font-style:italic;
+}
+p.rob { 
+    color: #ffbb00;
+    padding-left:20%
+}
+span.ROB {
+    font-weight:BOLD;
+    color: #ffbb00;
+}
+p.marsha {
+    padding-left:40%;
+    color:#ffff00;
+}
+span.MARSHA {
+    color:#ffff00;
+    font-weight:BOLD;
+}
+p.nine { 
+    color: #ff6767;
+    padding-left:70%
+}
+span.NINE {
+    font-weight:BOLD;
+    color: #ff6767;
+}
+p.ten { 
+    color: #92ff92;
+    padding-left:80%
+}
+span.TEN {
+    font-weight:BOLD;
+    color: #92ff92;
+}
+p.juice { 
+    color: #ffd502;
+    padding-left:60%
+}
+span.JUICE {
+    font-weight:BOLD;
+    color: #ffd502;
+}
+p.liz {
+    padding-left: 10%;
+    color: #ff6302;
+}
+span.LIZ {
+    font-weight:BOLD;
+    color: #ff6302;
+}
+a {
+color: rgb(64, 64, 255);
+
+}
+
+a:visited {
+color:rgb(161, 0, 161);
+}
+a:hover{
+color: rgb(50, 50, 240);
+}
+
+
+a:active {
+color: rgb(48, 48, 192);
+}
+a:visited:hover {
+color: rgb(131, 32, 131);
+}
+a:visited:active{
+color: rgb(96, 0, 96);
+}
+
+
+.center {
+text-align: center;
+text-decoration: bold;
+}
+.noboldcenter {
+text-align: center;
+}
